@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+  <link rel="icon" type="image/png" href="assets/images/profile 1.png">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#111] text-white font-['Nunito']">
+  <section class="flex flex-col justify-between h-screen">
+    <header class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
+      <svg width="70" height="70" viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M314.516 203.174L314.516 349.104L162.117 208.727M314.516 203.174L282.653 203.26M314.516 203.174L337.498 203.26L380.617 170.782L314.516 170.782M162.117 208.727L117.661 170.634L157.117 170.782M162.117 208.727L65.1165 301.139L20.176 301.139L137.099 188.83M200.117 170.782L282.653 96.1739L282.653 170.782M200.117 170.782L282.653 170.782M200.117 170.782L157.117 170.782M282.653 203.26L210.462 202.796L282.653 270.76L282.653 203.26ZM282.653 170.782L314.516 170.782M157.117 170.782L315.751 20.1061L314.516 170.782"
+          stroke="none" stroke-width="10" />
+      </svg>
+      <div class="flex gap-4 pointer-events-auto">
+        <a href="tel:7736259100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-phone">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://wa.me/7736259100">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp"
+            class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" width="24"
+            height="24" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="absolute inset-0 hidden sm:block" id="wrapper-canvas"></div>
+    <div class="flex -mt-10 relative">
+      <div class=" w-full px-4 max-w-screen-xl mx-auto">
+        <div class="relative ml-4 md:ml-12">
+          <h1 class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-12">
+            Mohammed Salih S A
+          </h1>
+          <p class="pointer-events-none font-['Merriweather'] italic my-4 md:my-8">
+            Jr Software Developer
+          </p>
+          <button onclick="openModal()"
+            class="bg-[#4595eb] py-2 pr-8 pl-5 rounded font-extrabold text-white bg-gradient-to-l from-blue-500 to-indigo-900 relative hover:scale-110 ease-in-out duration-300 group">
+            About Me
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 100"
+              class="absolute top-1/2 -translate-y-1/2 right-[-1.5rem] transition-all duration-300 ease-in-out group-hover:right-[-2rem]">
+              <g transform="translate(0,-952.36218)">
+                <path fill="#fff" stroke="white" stroke-width="2"
+                  d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z" />
+              </g>
+            </svg>
+          </button>
+
+          <div id="customModal"
+            class="fixed inset-0 bg-gray-950 bg-opacity-90 z-50 flex items-center justify-center hidden">
+            <div class="bg-[rgb(22,22,23)] text-white w-11/12 sm:w-10/12 md:w-3/4 lg:w-2/3 xl:w-3/4 
+                        p-6 md:p-8 rounded-lg relative max-h-[90vh] overflow-y-auto">
+
+              <!-- Close Button -->
+              <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-gray-400 hover:text-white text-3xl">&times;</button>
+
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 p-4">
+                  <h2 class="text-xl md:text-3xl font-bold text-blue-400">ABOUT ME</h2>
+                  <p class="text-gray-300 mt-4 text-sm md:text-lg leading-relaxed">
+                    I am a skilled Software Developer with 2+ years of experience in building high-performance mobile
+                    and web applications. Specializing in Flutter, I excel in API integrations, state management, and
+                    Firebase to create scalable solutions. I also have strong front-end expertise in Angular, React,
+                    HTML, CSS, and JavaScript, ensuring responsive and user-friendly web experiences. Passionate about
+                    clean code and problem-solving, I focus on delivering seamless, efficient, and engaging
+                    applications.
+                  </p>
+
+                  <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#Flutter</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#Dart</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#Firbase</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#Getx</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#Bloc</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#Hive</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#Angular.js</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#react.js</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#javascript</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#html5</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#css</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#sass</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#bootstrap</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#tailwind</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#git</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#github</span>
+                    <span class="px-2 py-1 rounded-lg text-sm border border-white">#SQL</span>
+                  </div>
+
+                  <div class="mt-6">
+                    <div class="flex space-x-6 md:space-x-8 mt-4">
+                      <div class="relative group">
+                        <img src="https://www.svgrepo.com/download/353751/flutter.svg" alt="Flutter"
+                          class="h-10 md:h-12">
+                        <span class="absolute left-1/2 -translate-x-1/2 bottom-[130%] opacity-0 bg-blue-500 text-white px-3 py-2 text-sm rounded-md w-auto
+                          transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-[-5px] scale-95 group-hover:scale-100
+                          after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:w-0 after:h-0 
+                          after:border-8 after:border-transparent after:border-t-blue-500">
+                          Flutter
+                        </span>
+                      </div>
+                      <div class="relative group">
+                        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular"
+                          class="h-14 md:h-14">
+                        <span class="absolute left-1/2 -translate-x-1/2 bottom-[130%] opacity-0 bg-red-500 text-white px-3 py-2 text-sm rounded-md w-auto
+                          transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-[-5px] scale-95 group-hover:scale-100
+                          after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:w-0 after:h-0 
+                          after:border-8 after:border-transparent after:border-t-red-500">
+                          Angular
+                        </span>
+                      </div>
+                      <div class="relative group">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"
+                          class="h-10 md:h-12">
+                        <span class="absolute left-1/2 -translate-x-1/2 bottom-[130%] opacity-0 bg-blue-500 text-white px-3 py-2 text-sm rounded-md w-auto
+                          transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-[-5px] scale-95 group-hover:scale-100
+                          after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:w-0 after:h-0 
+                          after:border-8 after:border-transparent after:border-t-cyan-500">
+                          React
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden md:flex md:w-1/2 p-4 justify-center">
+                  <img src="https://anuragsinghbam.com/images/coder.svg" alt="Developer Illustration"
+                    class="w-full max-w-xs md:max-w-md">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8 ">
+        <li>
+          <a href="https://linkedin.com/in/mohammadsalih">
+            <svg class="w-7 hover:scale-110 transition-transform duration-300 hover:text-white"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="w-7 hover:scale-110 transition-transform duration-300 hover:text-white"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mohammedsalih096">
+            <svg class="w-7 hover:scale-110 transition-transform duration-300 hover:text-white"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path fill="currentColor"
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/saalihh.h">
+            <svg class="w-7 hover:scale-110 transition-transform duration-300 hover:text-white"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:mohammadsalih096@gmail.com">
+            <svg class="w-7 hover:scale-110 transition-transform duration-300 hover:text-white"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="self-center after:content-[''] after:absolute after:w-[4px] after:h-8 after:left-1/2 after:-translate-x-1/2 after:top-full">
+      <button onclick="scrollToNextSection()"
+        class="bg-[#4595eb] py-2 pr-8 pl-5 rounded font-extrabold text-white bg-gradient-to-l from-blue-500 to-indigo-900 relative hover:scale-110 ease-in-out duration-300 group mb-20">
+        Latest Works
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40" viewBox="0 0 100 100"
+          class="absolute rotate-90 left-1/2 -translate-x-1/2 top-full transition-all duration-300 ease-in-out group-hover:top-[110%]">
+          <g transform="translate(0,-952.36218)">
+            <path style="text-indent: 0; text-transform: none; direction: ltr; block-progression: tb;
+                            baseline-shift: baseline; color: #000000; enable-background: accumulate;"
+              d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 
+                            c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 
+                            12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 
+                            l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 
+                            2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z" fill="#fff" fill-opacity="1" stroke="white" stroke-width="2" />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </section>
+  <section id="latestWorks" class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+    <h2
+      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
+      Latest Works
+    </h2>
+    <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=io.progbiz.sunstarmovers&pcampaignid=web_share"
+        class="flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mx-auto duration-200">
+          <img class="w-full max-w-[400px] h-[400px] object-cover relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] 
+                 sm:max-w-[300px] sm:h-[300px] 
+                 md:max-w-[350px] md:h-[350px] 
+                 xs:max-w-[200px] xs:h-[200px] 
+                 max-[640px]:max-w-[350px] max-[640px]:h-[350px]" src="./assets/images/sunst.webp" alt="" />
+          <span
+            class="flex absolute left-1/2 -translate-x-1/2 translate-y-[20px] z-0 opacity-0 bg-[#fc815c] text-black px-3 py-2 text-sm sm:text-base rounded-md w-max items-center gap-1 
+            transition-all duration-300 ease-in-out group-hover:translate-y-[-50px] group-hover:opacity-100 group-hover:z-20
+            after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:border-8 after:border-transparent after:border-t-[#fc815c]">
+            Sunstar Movers
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <div class="w-full">
+        <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+          Sunstar Movers
+        </h3>
+        <span class="text-[#fc815c] text-base md:text-lg">(movers app)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          The working process of this app is ,when an order is added, they contact the client, confirm the moving date,
+          and then start the moving. It tracks the status of the move and checks the remaining boxes to move. It
+          automates the payroll of the employees.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Flutter
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Dart
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #GetX
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #.net
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Hive
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Firebase
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #shared preferences
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #figma
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="order-2 sm:order-1 w-full">
+        <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
+          KE Unplugged
+        </h3>
+        <span class="text-[#ffe578] text-base md:text-lg">Survey App</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          Collect Insights Anytime, Anywhere. Conduct in-person surveys with KE-Unplugged. Whether you’re in a retail
+          setting, at an event, or in a remote area, this app simplifies the process of gathering valuable feedback from
+          your audience.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Flutter
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Dart
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Bloc
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #InAppWebView
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Api
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Figma
+        </ul>
+      </div>
+      <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.infolinetech.base_app.base_app"
+        class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out duration-200 sm:ml-auto">
+          <img class="w-full max-w-[400px] h-[400px] object-cover relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] 
+            sm:max-w-[300px] sm:h-[300px] 
+            md:max-w-[350px] md:h-[350px] 
+            xs:max-w-[200px] xs:h-[200px] 
+            max-[640px]:max-w-[350px] max-[640px]:h-[350px]" src="./assets/images/KE.png" alt="" />
+          <span
+            class="flex absolute left-1/2 -translate-x-1/2 translate-y-[20px] z-0 opacity-0 bg-[#ffe578] text-black px-3 py-2 text-sm sm:text-base rounded-md w-max items-center gap-1 
+            transition-all duration-300 ease-in-out group-hover:translate-y-[-50px] group-hover:opacity-100 group-hover:z-20
+            after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:border-8 after:border-transparent after:border-t-[#ffe578]">KE
+            Unplugged
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+
+
+
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://demo.infolinetech.in/admin/survey-builder/web/44/survey-explorer/questions/Q1"
+        class="flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200">
+          <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./assets/images/survey-web-app.webp" alt="" />
+          <span
+            class="flex absolute left-1/2 -translate-x-1/2 translate-y-[20px] z-0 opacity-0 bg-[#fc815c] text-black px-3 py-2 text-sm sm:text-base rounded-md w-max items-center gap-1 
+            transition-all duration-300 ease-in-out group-hover:translate-y-[-50px] group-hover:opacity-100 group-hover:z-20
+            after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:border-8 after:border-transparent after:border-t-[#fc815c]">
+            Infer
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <div class="w-full">
+        <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+          Infer
+        </h3>
+        <span class="text-[#fc815c] text-base md:text-lg">(Survey web app)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          Infer Admin Panel is a survey management platform built with Angular and NestJS, designed for market research
+          companies. It allows admins to create surveys, generate shareable links for participants, and analyze
+          responses in real time. Integrated with the Clarity module, it ensures a seamless and intuitive experience.
+          With a focus on scalability and security, Infer simplifies survey distribution and enhances data-driven
+          decision-making.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Angular Js
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Nest Js
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Typescript
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Html5
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Javascript</li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #CSS</li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Node Js</li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #SCSS
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Clarity
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Angular Material
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="order-2 sm:order-1 w-full">
+        <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
+          Airbnb App
+        </h3>
+        <span class="text-[#ffe578] text-base md:text-lg">(hotel booking app)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          A hotel booking app built with Flutter & Firebase, featuring Google Sign-In, real-time hotel listings, and
+          detailed room descriptions. Users can explore accommodations with images, pricing, and amenities. Integrated
+          Firestore for dynamic data updates and a smooth UI/UX for Android & iOS.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Flutter
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Dart
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Provider
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Firebase
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Figma
+        </ul>
+      </div>
+      <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://github.com/mohammedsalih096/Airbnb_flutter"
+        class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out duration-200 sm:ml-auto">
+          <img class="w-full max-w-[400px] h-[400px] object-cover relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] 
+            sm:max-w-[300px] sm:h-[300px] 
+            md:max-w-[350px] md:h-[350px] 
+            xs:max-w-[200px] xs:h-[200px] 
+            max-[640px]:max-w-[350px] max-[640px]:h-[350px]" src="./assets/images/airb.webp" alt="" />
+          <span
+            class="flex absolute left-1/2 -translate-x-1/2 translate-y-[20px] z-0 opacity-0 bg-[#ffe578] text-black px-3 py-2 text-sm sm:text-base rounded-md w-max items-center gap-1 
+            transition-all duration-300 ease-in-out group-hover:translate-y-[-50px] group-hover:opacity-100 group-hover:z-20
+            after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:border-8 after:border-transparent after:border-t-[#ffe578]">Airbnb
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://gitlab.com/mohammadsalih096/weatherapp"
+        class="flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200">
+          <img class="w-full max-w-[400px] h-[400px] object-cover relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] 
+            sm:max-w-[300px] sm:h-[300px] 
+            md:max-w-[350px] md:h-[350px] 
+            xs:max-w-[200px] xs:h-[200px] 
+            max-[640px]:max-w-[350px] max-[640px]:h-[350px]" src="./assets/images/weather-app.webp" alt="" />
+          <span
+            class="flex absolute left-1/2 -translate-x-1/2 translate-y-[20px] z-0 opacity-0 bg-[#fc815c] text-black px-3 py-2 text-sm sm:text-base rounded-md w-max items-center gap-1 
+            transition-all duration-300 ease-in-out group-hover:translate-y-[-50px] group-hover:opacity-100 group-hover:z-20
+            after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:border-8 after:border-transparent after:border-t-[#fc815c]">weather
+            app
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <div class="w-full">
+        <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+          weather-finder
+        </h3>
+        <span class="text-[#fc815c] text-base md:text-lg">(weather-app)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          A sleek weather app built with Flutter, using GetX for state management and a real-time weather API to fetch
+          accurate forecasts. Users can view current weather conditions, temperature, and location-based updates with a
+          smooth and responsive UI
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Flutter
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Dart
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Getx
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #API
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Figma
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="order-2 sm:order-1 w-full">
+        <h3 class="text-[#47afa1] font-bold text-2xl md:text-4xl">
+          E-commerse app
+        </h3>
+        <span class="text-[#47afa1] text-base md:text-lg">(mobile app)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          A modern e-commerce app built with Flutter & Firebase, using GetX for efficient state management. Features
+          Google Sign-In, product listings, cart management, and secure checkout with Firestore integration. Offers a
+          seamless shopping experience with a clean and responsive UI.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Flutter
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Dart
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Firebase
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Getx
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #dio
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #api
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #figma
+          </li>
+
+        </ul>
+      </div>
+      <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#47afa1] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://github.com/mohammedsalih096/ecommerce_flutter"
+        class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out duration-200 sm:ml-auto">
+          <img class="w-full max-w-[400px] h-[400px] object-cover relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)] 
+            sm:max-w-[300px] sm:h-[300px] 
+            md:max-w-[350px] md:h-[350px] 
+            xs:max-w-[200px] xs:h-[200px] 
+            max-[640px]:max-w-[350px] max-[640px]:h-[350px]" src="./assets/images/ecolatest.webp" alt="" />
+          <span
+            class="flex absolute left-1/2 -translate-x-1/2 translate-y-[20px] z-0 opacity-0 bg-[#47afa1] text-black px-3 py-2 text-sm sm:text-base rounded-md w-max items-center gap-1 
+            transition-all duration-300 ease-in-out group-hover:translate-y-[-50px] group-hover:opacity-100 group-hover:z-20
+            after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:border-8 after:border-transparent after:border-t-[#47afa1]">
+            E-commerce app
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://github.com/mohammedsalih096/gemini_clone"
+        class="flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200">
+          <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./assets/images/gemini-clone.png" alt="" />
+          <span
+            class="flex absolute left-1/2 -translate-x-1/2 translate-y-[20px] z-0 opacity-0 bg-[#fc815c] text-black px-3 py-2 text-sm sm:text-base rounded-md w-max items-center gap-1 
+            transition-all duration-300 ease-in-out group-hover:translate-y-[-50px] group-hover:opacity-100 group-hover:z-20
+            after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:top-full after:border-8 after:border-transparent after:border-t-[#fc815c]">
+            Gemini Clone
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <div class="w-full">
+        <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+          Google Gemini
+        </h3>
+        <span class="text-[#fc815c] text-base md:text-lg">(Gemini clone)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          A Google Gemini AI clone built with React & Vite, integrating the Google Gemini API for real-time AI-powered
+          responses. Features a sleek, fast, and responsive UI, delivering an interactive chat experience with smooth
+          performance and minimal load times.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #react.js
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #vite
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #React context api
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #html
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #css
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #javascript
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
+  </section>
+  <section class="max-w-screen-xl mx-auto px-4 pb-12">
+    <h2
+      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+      Let's Connect
+    </h2>
+    <div class="flex flex-col md:flex-row items-center mt-10">
+      <div class="w-full">
+        <img src="./assets/images/contact-me.svg" alt="phone" />
+      </div>
+      <form class="w-full" name="contactUS" netlify>
+        <label for="name" class="block mb-2 text-sm font-medium text-white dark:text-white">Name</label>
+        <div class="relative mb-4">
+          <input type="text" id="name" name="name"
+            class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            placeholder="Enter your name" />
+        </div>
+        <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-white">Your Email</label>
+        <div class="relative mb-4">
+          <input type="text" id="email" name="email"
+            class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            placeholder="mohammadsalih096@gmail.com" />
+        </div>
+        <label for="message" class="block mb-2 text-sm font-medium text-white dark:text-white">Message</label>
+        <div class="relative mb-4">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"></div>
+          <textarea id="message" name="message" rows="8"
+            class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">
+          Send
+        </button>
+      </form>
+    </div>
+  </section>
+  <footer class="flex flex-col items-center pb-10">
+    <p class="text-xs text-gray-300 p-5">Mohammad salih © 2025</p>
+    <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+      <li>
+        <a href="https://linkedin.com/in/mohammadsalih" target="_blank">
+          <svg class="w-5 hover:scale-110 transition-transform duration-300 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+            </path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <svg class="w-5 hover:scale-110 transition-transform duration-300 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+            </path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/saalihh.h">
+          <svg class="w-5 hover:scale-110 transition-transform duration-300 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+            </path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:mohammadsalih096@gmail.com" target="_blank">
+          <svg class="w-5 hover:scale-110 transition-transform duration-300 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z">
+            </path>
+          </svg>
+        </a>
+      </li>
+
+    </ul>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+  <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  <script src="./matter.js"></script>
+  <script>function openModal() {
+      document.getElementById("customModal").classList.remove("hidden");
+      document.body.style.overflow = "hidden"; // Prevent background scrolling
+    }
+
+    function closeModal() {
+      document.getElementById("customModal").classList.add("hidden");
+      document.body.style.overflow = "auto"; // Restore scrolling when modal is closed
+    }
+    function scrollToNextSection() {
+      const nextSection = document.getElementById("latestWorks"); // Replace with your section's ID
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>
